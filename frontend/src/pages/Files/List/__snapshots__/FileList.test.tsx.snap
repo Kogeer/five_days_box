@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileList Render files in table 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex flex-column align-items-end container"
+  >
+    <a
+      href="/files/upload"
+    >
+      <button
+        class="mb-3 btn btn-primary"
+        type="button"
+      >
+        Upload
+      </button>
+    </a>
+    <table
+      class="table table-striped table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th>
+            File name
+          </th>
+          <th>
+            Upload time
+          </th>
+          <th>
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="align-middle"
+        >
+          <td>
+            fake file
+          </td>
+          <td>
+            10/28/2021, 1:04:20 PM
+          </td>
+          <td>
+            <div
+              class="btn-group"
+              role="group"
+            >
+              <button
+                class="btn btn-primary"
+                type="button"
+              >
+                Share
+              </button>
+              <button
+                class="btn btn-success"
+                type="button"
+              >
+                Download
+              </button>
+              <button
+                class="btn btn-danger"
+                type="button"
+              >
+                Delete
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="align-middle"
+        >
+          <td>
+            another fake file
+          </td>
+          <td>
+            10/28/2021, 1:04:20 PM
+          </td>
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

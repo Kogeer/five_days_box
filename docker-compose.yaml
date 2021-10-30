@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: build/frontend/Dockerfile
+      target: local
+    volumes:
+      - ./frontend:/app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - FAST_REFRESH=false
+      - REACT_APP_API_URL=http://localhost:8000
+      - REACT_APP_FRONTEND_URL=http://localhost:3000
+
+  backend:
+    depends_on:
+      - database
+    build:
+      context: .
+      dockerfile: build/backend/Dockerfile
+      target: local
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://database:27017/files
+      - JWT_KEY=asdf1234
+      - NODE_ENV=local
+      - FRONTEND_URL=http://localhost:3000
+
+  database:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUp Render sign up 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="text-center"
+    >
+      Sign up
+    </h1>
+    <div
+      class="align-middle"
+    >
+      <form
+        class=""
+        novalidate=""
+      >
+        <div
+          class="mb-3"
+        >
+          <input
+            class="form-control"
+            name="name"
+            placeholder="Name"
+          />
+          <div
+            class="invalid-feedback"
+          >
+            Name is required!
+          </div>
+        </div>
+        <div
+          class="mb-3"
+        >
+          <input
+            class="form-control"
+            name="email"
+            placeholder="E-mail"
+          />
+          <div
+            class="invalid-feedback"
+          >
+            E-mail is required!
+          </div>
+        </div>
+        <div
+          class="mb-3"
+        >
+          <input
+            class="form-control"
+            name="password"
+            placeholder="Password"
+            type="password"
+          />
+          <div
+            class="invalid-feedback"
+          >
+            Password is required and minimum 4 length!
+          </div>
+        </div>
+        <button
+          class="btn btn-primary"
+          type="button"
+        >
+          Sign up
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
